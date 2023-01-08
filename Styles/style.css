@@ -1,0 +1,141 @@
+:root{
+    --fondo-principal: linear-gradient(to right, rgb(40, 130, 241) 0%, #6fd260 50%, #dc5e15 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 11rem;
+    margin-bottom: 2rem;
+    background: var(--fondo-principal);
+
+}
+
+nav img{
+    height: 8rem;
+    margin-left: 2.5rem;
+    align-self: center;
+ }
+
+#pop_logo {
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+#marvel_logo {
+    filter: drop-shadow(0px 0px 10px red);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+body {
+    background-color: black;
+}
+
+
+
+.target{
+    display: flex;
+    margin: 2rem;
+    width: 30rem;
+    min-height: 40rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 2px 1px 15px -1px #FFFF;
+}
+
+.target img{
+    align-self: center;
+    width: 100%;
+    filter: grayscale(1);
+    transition-property: filter;
+    transition-duration: 0.5s;
+}
+
+.target:hover{
+    transform: scale(1.1);
+}
+
+.target img:hover{
+    filter: grayscale(0);
+    transition-property: filter;
+    transition-duration: 0.5s;
+}
+
+.contact_container {
+    position: fixed;
+    bottom: 15rem;
+    right: 3.5rem;
+}
+
+.contact {
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.contact img {
+    align-self: center;
+    width: 5rem;
+    height: 50px;
+    filter: grayscale(1);
+    transition-property: filter;
+    transition-duration: 0.5s;
+}
+
+.contact img:hover {
+    filter: grayscale(0);
+    transition-property: filter;
+    transition-duration: 0.5s;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 5rem;
+    right: 0;
+}
+
+.fixed img{
+    height: 8rem;
+}
+
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--fondo-principal);
+    min-height: 8rem;
+}
+
+.footer{
+    color: whitesmoke;
+    font-family: 'Goldman', italic;
+}
+
+.footer p{
+    font-size: 1.6rem;
+}
